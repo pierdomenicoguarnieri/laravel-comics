@@ -49,41 +49,41 @@ return [
       'dc Comic' => [
         [
           'text' => "characters",
-          'href' => "#"
+          'href' => "characters"
         ],
         [
           'text' => "comics",
-          'href' => "#"
+          'href' => "comics"
         ],
         [
           'text' => "movies",
-          'href' => "#"
+          'href' => "movies"
         ],
         [
           'text' => "TV",
-          'href' => "#"
+          'href' => "tv"
         ],
         [
           'text' => "games",
-          'href' => "#"
+          'href' => "games"
         ],
         [
           'text' => "videos",
-          'href' => "#"
+          'href' => "videos"
         ],
         [
           'text' => "news",
-          'href' => "#"
+          'href' => "news"
         ]
       ],
       'shop' => [
         [
           'text' => "shop DC",
-          'href' => "#"
+          'href' => "shop"
         ],
         [
           'text' => "shop DC collectibles",
-          'href' => "#"
+          'href' => "collectibles"
         ]
       ]
     ],

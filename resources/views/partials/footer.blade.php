@@ -15,7 +15,7 @@
             <ul>
               @foreach ($menu_section as $item)
               <li>
-                <a href="">{{$item['text']}}</a>
+                <a href="{{route($item['href'])}}">{{$item['text']}}</a>
               </li>
               @endforeach
             </ul>

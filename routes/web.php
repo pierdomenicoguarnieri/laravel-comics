@@ -52,3 +52,7 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
   return view('no-page');
 })->name('shop');
+
+Route::get('/no-page', function () {
+  return view('no-page');
+})->name('#');
