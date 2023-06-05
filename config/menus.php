@@ -4,7 +4,7 @@ return [
   'header_menu' => [
     [
       'text' => "characters",
-      'href' => "home"
+      'href' => "characters"
     ],
     [
       'text' => "comics",
@@ -158,6 +158,29 @@ return [
         'href' => "#"
       ],
       ]
+    ]
+  ],
+
+  'menuCta' => [
+    [
+      'img' => "buy-comics-digital-comics.png",
+      'text' => "digital comics"
+    ],
+    [
+      'img' => "buy-comics-merchandise.png",
+      'text' => "dc merchandise"
+    ],
+    [
+      'img' => "buy-comics-subscriptions.png",
+      'text' => "subcriptions"
+    ],
+    [
+      'img' => "buy-comics-shop-locator.png",
+      'text' => "comic shop locator"
+    ],
+    [
+      'img' => "buy-dc-power-visa.svg",
+      'text' => "dc power visa"
     ]
   ],
 

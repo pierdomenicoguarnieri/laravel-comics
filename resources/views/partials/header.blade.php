@@ -5,7 +5,7 @@
 <header>
   <div class="container">
     <div class="left">
-      <a href="{{route('home')}}"><img src="/img/dc-logo.png" alt="DC Comics Logo"></a>
+      <a href="{{route('comics')}}"><img src="/img/dc-logo.png" alt="DC Comics Logo"></a>
     </div>
     <div class="right">
       <nav>
