@@ -6,7 +6,7 @@
 @extends('layout.main')
 
 @section('title')
-  Homepage
+  {{Route::currentRouteName()}}
 @endsection
 
 @section('content')
