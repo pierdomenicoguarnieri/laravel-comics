@@ -11,7 +11,13 @@
       <nav>
         <ul>
           @foreach ($menu_header as $link)
-          <li><a href="{{route($link['href'])}}" class="text-uppercase {{Route::currentRouteName() === $link['href'] ? 'active' : ''}}">{{$link['text']}}</a></li>
+          <li>
+            <a
+            href="{{route($link['href'])}}"
+            class="text-uppercase {{Route::currentRouteName() === $link['href'] ? 'active' : ''}}">
+              {{$link['text']}}
+            </a>
+          </li>
           @endforeach
         </ul>
       </nav>
