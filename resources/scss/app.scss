@@ -1,1 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
+
+@import "@fontsource/oswald";
+
+@import "./partials/variables";
+@import "./partials/general";
+@import "./partials/typography";
+@import "./partials/utils";
+
+@import "./partials/header";

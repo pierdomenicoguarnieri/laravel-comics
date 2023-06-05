@@ -1,0 +1,44 @@
+@use "./mixin" as *;
+
+header{
+  height: 100px;
+  .container{
+    height: 100%;
+    @include container;
+    @include displayFlex("between");
+    .left, .right{
+      @include displayFlex("vertical");
+    }
+    .left{
+      a{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img{
+          max-height: 80%;
+        }
+      }
+    }
+    li{
+      display: inline-block;
+      a{
+        margin: 0 15px;
+        color: $grey;
+        font-weight: $bold;
+        padding-bottom: 42px;
+        border-bottom: 5px solid transparent;
+        text-transform: uppercase;
+        font-size: $s-text;
+        &:hover{
+          transition: all .3s;
+          border-bottom: 5px solid $blue;
+          color: $blue;
+        }
+        &.active{
+          border-bottom: 5px solid $blue;
+          color: $blue;
+        }
+      }
+    }
+  }
+}
