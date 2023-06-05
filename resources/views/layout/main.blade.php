@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
     <title>Laravel Comics | @yield('title')</title>
 
     <!-- Fonts -->
@@ -17,7 +19,11 @@
 
   <body>
 
+    @include('partials.header')
+
     @yield('content')
+
+    @include('partials.footer')
 
   </body>
 
