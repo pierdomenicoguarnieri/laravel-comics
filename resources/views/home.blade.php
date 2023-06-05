@@ -1,5 +1,6 @@
 @php
-  $menu_cta = config('menus.menuCta')
+  $menu_cta = config('menus.menuCta');
+  $cards_array = config('comics');
 @endphp
 
 @extends('layout.main')
@@ -12,9 +13,16 @@
   <main>
     <div class="content">
       <div class="container">
-        <span>Current series</span>
+        <span class="label">Current series</span>
         <div class="card-container">
-
+          @foreach ($cards_array as $card)
+          <div class="pg-card">
+            <div class="img-container">
+              <img src="{{$card['thumb']}}" alt="">
+            </div>
+            <span>{{$card['title']}}</span>
+          </div>
+          @endforeach
         </div>
         <div class="pg-btn-container">
           <button type="button">Load More</button>

@@ -31,7 +31,7 @@ main{
     background-color: $black;
     color: white;
     padding: 50px 0;
-    span{
+    .label{
       position: absolute;
       bottom: 100%;
       left: 0;
@@ -41,6 +41,37 @@ main{
       font-weight: $extra-bold;
       font-size: $xl-text;
       background-color: $blue;
+    }
+  }
+
+  .pg-card{
+    width: calc(100%/6);
+    margin-bottom: 30px;
+    padding: 0 10px;
+    &:hover{
+      cursor: pointer;
+      img{
+        transition: all .3s;
+        filter: brightness(50%);
+      }
+      span{
+        transition: all .3s;
+        color: $blue;
+      }
+    }
+    .img-container{
+      width: 100%;
+      aspect-ratio: 2/3;
+      margin-bottom: 5px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    span{
+      text-transform: uppercase;
+      font-weight: $semi-bold;
     }
   }
 
