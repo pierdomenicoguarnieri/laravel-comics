@@ -7,6 +7,27 @@
     position: relative;
     text-align: center;
     max-width: 1000px;
+    .col{
+      display: flex;
+      text-align: start;
+      h1{
+        color: darken($blue, 25%);
+      }
+      .pg-price-container{
+        background-color: #55BA59;
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+        .left{
+          display: flex;
+          justify-content: space-between;
+          width: 70%;
+        }
+        .right{
+          width: 30%;
+        }
+      }
+    }
   }
   .pg-img-wrapper{
     height: 80px;
