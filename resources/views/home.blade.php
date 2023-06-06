@@ -16,12 +16,14 @@
         <span class="label">Current series</span>
         <div class="card-container">
           @foreach ($cards_array as $card)
-          <div class="pg-card">
-            <div class="img-container">
-              <img src="{{$card['thumb']}}" alt="">
+            <div class="pg-card">
+              <a href="{{route('infos')}}">
+                <div class="img-container">
+                  <img src="{{$card['thumb']}}" alt="">
+                </div>
+                <span>{{$card['title']}}</span>
+              </a>
             </div>
-            <span>{{$card['title']}}</span>
-          </div>
           @endforeach
         </div>
         <div class="pg-btn-container">
