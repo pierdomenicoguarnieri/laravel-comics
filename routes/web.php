@@ -57,7 +57,7 @@ Route::get('/comic-info/{slug}', function ($slug) {
   $comics = config('comics');
   $comicFiltered = array_filter($comics, fn($comics) => $comics['slug'] === $slug );
   if(empty($comicFiltered)){
-    return redirect('/');
+    return redirect('/error-404');
   }
   $comic = $comicFiltered[array_key_first($comicFiltered)];
   return view('comic-info', compact('comic'));
@@ -66,3 +66,7 @@ Route::get('/comic-info/{slug}', function ($slug) {
 Route::get('/no-page', function () {
   return view('no-page');
 })->name('#');
+
+Route::get('/error-404', function(){
+  return view('layout.404');
+});
