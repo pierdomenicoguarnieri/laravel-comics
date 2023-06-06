@@ -17,7 +17,7 @@
         <div class="card-container">
           @foreach ($cards_array as $card)
             <div class="pg-card">
-              <a href="{{route('infos')}}">
+              <a href="{{route('infos', ['slug' => $card['slug']])}}">
                 <div class="img-container">
                   <img src="{{$card['thumb']}}" alt="">
                 </div>

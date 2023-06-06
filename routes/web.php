@@ -53,8 +53,11 @@ Route::get('/shop', function () {
   return view('no-page');
 })->name('shop');
 
-Route::get('/comic-info', function () {
-  return view('comic-info');
+Route::get('/comic-info/{slug}', function ($slug) {
+  $comics = config('comics');
+  $comicFiltered = array_filter($comics, fn($comics) => $comics['slug'] === $slug );
+  $comic = $comicFiltered[array_key_first($comicFiltered)];
+  return view('comic-info', compact('comic'));
 })->name('infos');
 
 Route::get('/no-page', function () {
