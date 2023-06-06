@@ -53,6 +53,10 @@ Route::get('/shop', function () {
   return view('no-page');
 })->name('shop');
 
+Route::get('/comic-info', function () {
+  return view('no-page');
+})->name('infos');
+
 Route::get('/no-page', function () {
   return view('no-page');
 })->name('#');
