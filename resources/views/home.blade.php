@@ -12,17 +12,23 @@
 @section('content')
   <main>
     <div class="content">
+
       <div class="container">
+
         <span class="label">Current series</span>
+
         <div class="card-container">
+
           @foreach ($cards_array as $card)
             <div class="pg-card">
+
               <a href="{{route('infos', ['slug' => $card['slug']])}}">
                 <div class="img-container">
                   <img src="{{$card['thumb']}}" alt="">
                 </div>
                 <span>{{$card['title']}}</span>
               </a>
+
             </div>
           @endforeach
         </div>
@@ -34,10 +40,13 @@
 
     <div class="cta">
       <div class="container">
+
         @foreach ($menu_cta as $element)
           <div class="element">
+
             <img src="{{Vite::asset('/resources/img/' . $element['img'])}}" alt="">
             <span>{{$element['text']}}</span>
+
           </div>
         @endforeach
       </div>

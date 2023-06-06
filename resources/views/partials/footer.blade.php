@@ -5,14 +5,20 @@
 
 <footer>
   <div class="top">
+
     <div class="container">
+
       <div class="left">
+
         @foreach ($menu_footer as $menu_col)
         <div class="col">
+
           @foreach ($menu_col as $key => $menu_section )
           <h4>{{$key}}</h4>
+
           <nav>
             <ul>
+
               @foreach ($menu_section as $item)
               <li>
                 <a href="{{route($item['href'])}}">{{$item['text']}}</a>
@@ -30,12 +36,16 @@
   </div>
 
   <div class="bottom">
+
     <div class="container">
+
       <div class="left">
         <span>Sing-up now!</span>
       </div>
+
       <div class="right">
         <span>Follow us</span>
+
         <nav>
           <ul>
             @foreach ($menu_social as $icon)
