@@ -54,7 +54,7 @@ Route::get('/shop', function () {
 })->name('shop');
 
 Route::get('/comic-info', function () {
-  return view('no-page');
+  return view('comic-info');
 })->name('infos');
 
 Route::get('/no-page', function () {
