@@ -56,6 +56,9 @@ Route::get('/shop', function () {
 Route::get('/comic-info/{slug}', function ($slug) {
   $comics = config('comics');
   $comicFiltered = array_filter($comics, fn($comics) => $comics['slug'] === $slug );
+  if(empty($comicFiltered)){
+    return redirect('/');
+  }
   $comic = $comicFiltered[array_key_first($comicFiltered)];
   return view('comic-info', compact('comic'));
 })->name('infos');
