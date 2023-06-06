@@ -6,6 +6,14 @@
 
 @section('content')
   <main>
-    <h1>Card</h1>
+    <div class="pg-main-wrapper">
+      <div class="pg-img-wrapper">
+        <div class="pg-img-container">
+          <img src="{{$comic['thumb']}}" alt="">
+        </div>
+      </div>
+      <div class="container">
+      </div>
+    </div>
   </main>
 @endsection

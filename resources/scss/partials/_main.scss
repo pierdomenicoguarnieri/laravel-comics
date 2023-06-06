@@ -48,16 +48,21 @@ main{
     width: calc(100%/6);
     margin-bottom: 30px;
     padding: 0 10px;
-    &:hover{
-      cursor: pointer;
-      img{
-        transition: all .3s;
-        filter: brightness(50%);
-      }
-      span{
-        transition: all .3s;
-        color: $blue;
-      }
+    span{
+      color: $white;
+    }
+    a{
+      &:hover{
+        cursor: pointer;
+        img{
+          transition: all .3s;
+          filter: brightness(50%);
+        }
+        span{
+          transition: all .3s;
+          color: $blue;
+        }
+    }
     }
     .img-container{
       width: 100%;
