@@ -10,7 +10,7 @@
     .col{
       display: flex;
       text-align: start;
-      h1{
+      h1, h4{
         color: darken($blue, 25%);
       }
       .pg-price-container{
