@@ -1,0 +1,28 @@
+@use "./mixin" as *;
+
+.pg-main-wrapper{
+  .container{
+    @include container;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+  }
+  .pg-img-wrapper{
+    height: 80px;
+    background-color: $blue;
+    .pg-img-container{
+      @include container;
+      max-width: 1000px;
+      justify-content: start;
+      img{
+        transform: translate(0, -85%);
+        width: 200px;
+        aspect-ratio: 2/3;
+        object-fit: cover;
+        border: 2px solid $white;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.425);
+      }
+    }
+  }
+}
