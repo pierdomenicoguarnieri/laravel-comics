@@ -46,4 +46,14 @@
       }
     }
   }
+
+  .pg-lower-content{
+    td{
+      font-weight: 100;
+      font-size: .85rem;
+      &.pg-blue{
+        color: $blue;
+      }
+    }
+  }
 }

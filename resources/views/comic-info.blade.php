@@ -26,12 +26,12 @@
 
               <div class="pg-price-container border-bottom border-black mt-3">
                 <div class="left py-3">
-                  <span class="ms-4">U.S. Price: {{$comic['price']}}</span>
-                  <span class="text-uppercase me-4">available</span>
+                  <span class="ms-4"><span class="opacity-75">U.S. Price:</span> {{$comic['price']}}</span>
+                  <span class="text-uppercase me-4 opacity-75">available</span>
                 </div>
 
                 <div class="right h-100 text-center border-start border-black py-3">
-                  <span class="text-capitalize">check availability</span>
+                  <span class="text-capitalize">check availability &blacktriangledown;</span>
                 </div>
               </div>
 
@@ -40,7 +40,7 @@
 
             <div class="col col-4 flex-column text-end text-uppercase">
               <span>Advertisement</span>
-              <img src="{{Vite::asset('resources/img/adv.jpg')}}" alt="Adv">
+              <img src="{{Vite::asset('resources/img/advertisement.jpg')}}" alt="Adv">
             </div>
           </div>
         </div>
@@ -56,14 +56,14 @@
               <table class="table mt-3">
 
                 <tbody>
-                  <tr class="table-light">
+                  <tr class="table-light border-top">
                     <td class="w-25">Art by:</td>
-                    <td>{{implode(", ", $comic['artists'])}}</td>
+                    <td class="pg-blue">{{implode(", ", $comic['artists'])}}</td>
                   </tr>
 
                   <tr class="table-light">
                     <td class="w-25">Written by:</td>
-                    <td>{{implode(", ", $comic['writers'])}}</td>
+                    <td class="pg-blue">{{implode(", ", $comic['writers'])}}</td>
                   </tr>
                 </tbody>
               </table>
@@ -76,9 +76,9 @@
               <table class="table mt-3">
 
                 <tbody>
-                  <tr class="table-light">
+                  <tr class="table-light border-top">
                     <td class="w-25">Series:</td>
-                    <td>{{$comic['series']}}</td>
+                    <td class="pg-blue text-uppercase">{{$comic['series']}}</td>
                   </tr>
 
                   <tr class="table-light">
